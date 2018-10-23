@@ -18,7 +18,7 @@
 ### Setting up the environment
 - In order to run Go within your terminal, you’ll need to setup the GOPATH, GOBIN environment variables. This will allow Go to properly locate your workspace in order to run your code and manage your packages and binary files.
 - Edit your ~/.bash_profile to add the following line:
-  - export GOPATH=$HOME/go
+  - export GOPATH=/Users/username/my_tour_of_go
   - export GOBIN=$GOPATH/bin
   - export PATH=$GOBIN:$PATH
 - Save and exit your editor. Then, source your ~/.bash_profile.
@@ -28,7 +28,7 @@
   - cd src
   - mkdir hello_world
   - touch hello.go
-- open your hello.go file in some editor like VSCode, Vim etc and the code.
+- open your hello.go file in some editor like VSCode, Vim etc and write the code.
 
 ```go
 package main
@@ -39,7 +39,7 @@ func main(){
 	fmt.Println("Hello Go, I am here.")
 }
 ```
-- Go back to the hello_world folder in the terminal,  and type following command.
+- Go back to the hello_world folder in the terminal,  and type the following command.
   - go run hello.go
 - The proper output would be:
   - Hello Go, I am here.
